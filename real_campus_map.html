@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7d08125b5da34690e67727b97a7a8da5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7d08125b5da34690e67727b97a7a8da5" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7d08125b5da34690e67727b97a7a8da5 = L.map(
+                "map_7d08125b5da34690e67727b97a7a8da5",
+                {
+                    center: [51.187911, 71.409788],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 16,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9168d89bb5082ac43105717204f9370c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_9168d89bb5082ac43105717204f9370c.addTo(map_7d08125b5da34690e67727b97a7a8da5);
+        
+    
+            var marker_cluster_bb4f80c6824eeeb039e5b5e6b4394d87 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_cdeb0eeb48965e635a0243a93e6c31de = L.marker(
+                [51.187317, 71.409006],
+                {}
+            ).addTo(marker_cluster_bb4f80c6824eeeb039e5b5e6b4394d87);
+        
+    
+            var icon_3ad843847728168cabc93efdb82ef47b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cdeb0eeb48965e635a0243a93e6c31de.setIcon(icon_3ad843847728168cabc93efdb82ef47b);
+        
+    
+        var popup_fcaba59e8335117b3531204f6ff52d82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac7f2d8e29a3aa8fa6c93ba018c04463 = $(`<div id="html_ac7f2d8e29a3aa8fa6c93ba018c04463" style="width: 100.0%; height: 100.0%;"><b>Главное здание</b><br>Учебный корпус<br>Здесь проходят лекции</div>`)[0];
+                popup_fcaba59e8335117b3531204f6ff52d82.setContent(html_ac7f2d8e29a3aa8fa6c93ba018c04463);
+            
+        
+
+        marker_cdeb0eeb48965e635a0243a93e6c31de.bindPopup(popup_fcaba59e8335117b3531204f6ff52d82)
+        ;
+
+        
+    
+    
+            var marker_6f8c8081a3e818fd087226e95acc7b1f = L.marker(
+                [51.187888, 71.409773],
+                {}
+            ).addTo(marker_cluster_bb4f80c6824eeeb039e5b5e6b4394d87);
+        
+    
+            var icon_8503c6a7b9dc75ca662743d0367b5011 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_6f8c8081a3e818fd087226e95acc7b1f.setIcon(icon_8503c6a7b9dc75ca662743d0367b5011);
+        
+    
+        var popup_0658b7ca3194c1b647db514e20904ca9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_605f0027b3458c3070619e8ab58d1163 = $(`<div id="html_605f0027b3458c3070619e8ab58d1163" style="width: 100.0%; height: 100.0%;"><b>Биокорпус</b><br>Асхана<br>Лучший препод Елубаев Дастан Рамазанович</div>`)[0];
+                popup_0658b7ca3194c1b647db514e20904ca9.setContent(html_605f0027b3458c3070619e8ab58d1163);
+            
+        
+
+        marker_6f8c8081a3e818fd087226e95acc7b1f.bindPopup(popup_0658b7ca3194c1b647db514e20904ca9)
+        ;
+
+        
+    
+    
+            var marker_c176466dbb46e31cec4219cb8bb99747 = L.marker(
+                [51.187673, 71.408765],
+                {}
+            ).addTo(marker_cluster_bb4f80c6824eeeb039e5b5e6b4394d87);
+        
+    
+            var icon_ff41216614d06f877ef4a171aa096559 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c176466dbb46e31cec4219cb8bb99747.setIcon(icon_ff41216614d06f877ef4a171aa096559);
+        
+    
+        var popup_70c0093c5786f2cc4729490472c05c01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fe73753a262b51859aeaccbb57b6fbb = $(`<div id="html_0fe73753a262b51859aeaccbb57b6fbb" style="width: 100.0%; height: 100.0%;"><b>Кафе</b><br>Кафетерий<br>Кофе и закуски</div>`)[0];
+                popup_70c0093c5786f2cc4729490472c05c01.setContent(html_0fe73753a262b51859aeaccbb57b6fbb);
+            
+        
+
+        marker_c176466dbb46e31cec4219cb8bb99747.bindPopup(popup_70c0093c5786f2cc4729490472c05c01)
+        ;
+
+        
+    
+    
+            marker_cluster_bb4f80c6824eeeb039e5b5e6b4394d87.addTo(map_7d08125b5da34690e67727b97a7a8da5);
+        
+    
+            var marker_cluster_ba7f6de69ffb8872da81d3c6edfe8fad = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_197be270bc067e688fb6221f318699a5 = L.marker(
+                [51.187317, 71.409006],
+                {}
+            ).addTo(marker_cluster_ba7f6de69ffb8872da81d3c6edfe8fad);
+        
+    
+            var icon_6890f771a961b616f2799e08d165e21f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_197be270bc067e688fb6221f318699a5.setIcon(icon_6890f771a961b616f2799e08d165e21f);
+        
+    
+        var popup_89135f8a075bfde60c05ca3dfeba643d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f31c014805638af8dd070a9d65a3c2a = $(`<div id="html_6f31c014805638af8dd070a9d65a3c2a" style="width: 100.0%; height: 100.0%;"><b>Главное здание</b><br>Учебный корпус<br>Здесь проходят лекции</div>`)[0];
+                popup_89135f8a075bfde60c05ca3dfeba643d.setContent(html_6f31c014805638af8dd070a9d65a3c2a);
+            
+        
+
+        marker_197be270bc067e688fb6221f318699a5.bindPopup(popup_89135f8a075bfde60c05ca3dfeba643d)
+        ;
+
+        
+    
+    
+            var marker_d6be91ea54ae7a5dcfbbcf2fb01fb2f5 = L.marker(
+                [51.187888, 71.409773],
+                {}
+            ).addTo(marker_cluster_ba7f6de69ffb8872da81d3c6edfe8fad);
+        
+    
+            var icon_7506eb915b9d90a192f04979ca4e9c53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "gray", "prefix": "glyphicon"}
+            );
+            marker_d6be91ea54ae7a5dcfbbcf2fb01fb2f5.setIcon(icon_7506eb915b9d90a192f04979ca4e9c53);
+        
+    
+        var popup_87b874a4f3731272dbb9c26fcdb4d23f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78a30f36a4e20421b17114358dd07c57 = $(`<div id="html_78a30f36a4e20421b17114358dd07c57" style="width: 100.0%; height: 100.0%;"><b>Биокорпус</b><br>Асхана<br>Лучший препод Елубаев Дастан Рамазанович</div>`)[0];
+                popup_87b874a4f3731272dbb9c26fcdb4d23f.setContent(html_78a30f36a4e20421b17114358dd07c57);
+            
+        
+
+        marker_d6be91ea54ae7a5dcfbbcf2fb01fb2f5.bindPopup(popup_87b874a4f3731272dbb9c26fcdb4d23f)
+        ;
+
+        
+    
+    
+            var marker_55cd46ab6637570b63d2e52cb3aaa342 = L.marker(
+                [51.187673, 71.408765],
+                {}
+            ).addTo(marker_cluster_ba7f6de69ffb8872da81d3c6edfe8fad);
+        
+    
+            var icon_6efbcc84c6aeea5c506a7efba54c7e9a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_55cd46ab6637570b63d2e52cb3aaa342.setIcon(icon_6efbcc84c6aeea5c506a7efba54c7e9a);
+        
+    
+        var popup_02d80671751ac3473a6db3b7756ba163 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ea519ed4de2e223317a9ef287a9cc47 = $(`<div id="html_6ea519ed4de2e223317a9ef287a9cc47" style="width: 100.0%; height: 100.0%;"><b>Кафе</b><br>Кафетерий<br>Кофе и закуски</div>`)[0];
+                popup_02d80671751ac3473a6db3b7756ba163.setContent(html_6ea519ed4de2e223317a9ef287a9cc47);
+            
+        
+
+        marker_55cd46ab6637570b63d2e52cb3aaa342.bindPopup(popup_02d80671751ac3473a6db3b7756ba163)
+        ;
+
+        
+    
+    
+            marker_cluster_ba7f6de69ffb8872da81d3c6edfe8fad.addTo(map_7d08125b5da34690e67727b97a7a8da5);
+        
+</script>
+</html>
